@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://haimailwb.vercel.app/sitemap.xml
