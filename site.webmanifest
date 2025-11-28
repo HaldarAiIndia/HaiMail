@@ -1,0 +1,21 @@
+{
+    "name": "HaiMail",
+    "short_name": "HaiMail",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#fff0f5",
+    "theme_color": "#fff0f5",
+    "description": "Stop spam forever. Get a beautiful, secure, and anonymous temporary email address in one click.",
+    "icons": [
+        {
+            "src": "/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
