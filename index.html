@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    
+    <!-- ================================================================================== --> 
+    <!-- SEO & META DATA (Updated Keywords & Schema, Original Title/Desc) --> 
+    <!-- ================================================================================== --> 
+    <title>HaiMail - Instant Privacy.</title> 
+    <meta name="description" content="Stop spam forever. Get a beautiful, secure, and anonymous temporary email address in one click. No signup. 100% Free."> 
+    <meta name="keywords" content="temp mail, temporary email generator, disposable email, throwaway email, fake mail, fake email id, 10 minute mail, anonymous email, trash mail, spam protection, secure inbox, free temp mail, email for verification, HaiMail"> 
+    <meta name="author" content="HaldarAi"> 
+    <meta name="robots" content="index, follow"> 
+    <meta name="googlebot" content="index, follow"> 
+    <link rel="canonical" href="https://haimailwb.vercel.app/">
+
+    <!-- SITEMAP TAG --> 
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="https://haimailwb.vercel.app/sitemap.xml"> 
+    <link rel="sitemap" type="text/plain" title="Sitemap" href="https://haimailwb.vercel.app/sitemap.txt">
+
+    <!-- Google Search Console Verification --> 
+    <meta name="google-site-verification" content="R7X62f4tJJ8vf-WnsSdx1JVOrFLgkgK5AHiFm_8PhNI" />
+
+    <!-- Open Graph / Facebook --> 
+    <meta property="og:type" content="website"> 
+    <meta property="og:site_name" content="HaiMail">
+    <meta property="og:url" content="https://haimailwb.vercel.app/"> 
+    <meta property="og:title" content="HaiMail - Instant Privacy."> 
+    <meta property="og:description" content="Stop spam forever. Get a beautiful, secure, and anonymous temporary email address in one click. No signup. 100% Free."> 
+    <meta property="og:image" content="https://haimailwb.vercel.app/favicon.png">
+
+    <!-- Twitter --> 
+    <meta name="twitter:card" content="summary_large_image"> 
+    <meta name="twitter:url" content="https://haimailwb.vercel.app/">
+    <meta name="twitter:title" content="HaiMail - Instant Privacy."> 
+    <meta name="twitter:description" content="Stop spam forever. Get a beautiful, secure, and anonymous temporary email address in one click."> 
+    <meta name="twitter:image" content="https://haimailwb.vercel.app/favicon.png">
+
+    <!-- Schema Markup (JSON-LD) for SEO Boosting -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "HaiMail",
+      "url": "https://haimailwb.vercel.app/",
+      "description": "Stop spam forever. Get a beautiful, secure, and anonymous temporary email address in one click. No signup. 100% Free.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "All",
+      "creator": {
+        "@type": "Organization",
+        "name": "HaldarAi"
+      }
+    }
+    </script>
+
+    <!-- Icons & Manifest --> 
+    <link rel="icon" type="image/png" href="/favicon.png"> 
+    <link rel="shortcut icon" href="/favicon.png"> 
+    <link rel="apple-touch-icon" href="/favicon.png"> 
+    <link rel="manifest" href="/site.webmanifest"> 
+    <meta name="theme-color" content="#170C2E"> 
+    
+    <!-- ================================================================================== --> 
+    <!-- APP RESOURCES --> 
+    <!-- ================================================================================== --> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Roboto+Mono&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<style>
+/* --- THEME CONFIGURATION (Purple UI/UX) --- */ 
+:root { 
+    /* Light Theme */ 
+    --bg-primary: #F5F4FA; 
+    --bg-secondary: #ffffff; 
+    --bg-tertiary: #EBE8F5; 
+    --bg-code: #F0EDF7; 
+    --bg-hover: #E2DDED; 
+    --text-primary: #0E0A16; 
+    --text-secondary: #746C83; 
+    --text-active: #7445E8; 
+    --border-color: #D2CBE6; 
+    --error-color: #E83655; 
+    --green-color: #1FA67A;
+    --sidebar-width: 280px; 
+    --link-color: #2563eb;
+    
+    --font-family: 'Inter', sans-serif; 
+    --font-family-code: 'JetBrains Mono', 'Roboto Mono', monospace;
+    --font-family-disp: 'Space Grotesk', sans-serif;
+    
+    --brand-gradient: linear-gradient(135deg, #8C5EFF 0%, #5B2ACB 100%); 
+    --brand-shadow: 0 4px 15px rgba(116, 69, 232, 0.25); 
+    --spinner-color: rgba(116, 69, 232, 0.3); 
+    --dot-bg: rgba(0,0,0,0.045);
+}
+
+/* Dark Theme Variables */ 
+[data-theme="dark"] { 
+    --bg-primary: #0B0813; 
+    --bg-secondary: #170C2E; 
+    --bg-tertiary: #27174A; 
+    --bg-code: #100A1C; 
+    --bg-hover: #1F113D; 
+    --text-primary: #F5F4FA; 
+    --text-secondary: #9085A6; 
+    --border-color: #2F1E54; 
+    --link-color: #60a5fa;
+    --brand-shadow: 0 4px 20px rgba(116, 69, 232, 0.2); 
+    --spinner-color: rgba(255,255,255,0.15); 
+    --dot-bg: rgba(255,255,255,0.035);
+}
+
+/* --- Base & Reset --- */ 
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; } 
+html, body { 
+    height: 100%; 
+    overflow: hidden; 
+    background-color: var(--bg-primary); 
+    color: var(--text-primary); 
+    font-family: var(--font-family); 
+    font-size: 14px; 
+    transition: background-color 0.3s, color 0.3s; 
+    -webkit-font-smoothing: antialiased;
+} 
+body::before { 
+    content: ""; position: fixed; inset: 0; 
+    background-image: radial-gradient(circle at 1px 1px, var(--dot-bg) 1px, transparent 1px); 
+    background-size: 22px 22px; pointer-events: none; z-index: 0; 
+    transition: background-image 0.3s;
+}
+button, a { background: none; border: none; cursor: pointer; color: inherit; text-decoration: none; font-family: inherit; } 
+.material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24; font-size: 20px; color: var(--text-secondary); transition: color 0.2s; user-select: none; }
+
+/* --- Main Layout --- */ 
+.app-container { display: flex; width: 100%; height: 100%; position: relative; z-index: 1; } 
+.main-wrapper { width: 100%; height: 100%; display: flex; flex-direction: column; max-width: 900px; margin: 0 auto; } 
+.main-header { display: flex; align-items: center; justify-content: space-between; padding: 24px; flex-shrink: 0; position: sticky; top: 0; z-index: 100; } 
+.brand { display: flex; align-items: center; gap: 14px; }
+.brand-mark { width: 42px; height: 42px; border-radius: 12px; border: 2px solid var(--text-active); display: flex; align-items: center; justify-content: center; position: relative; flex-shrink: 0; background: var(--bg-secondary); overflow: hidden; padding: 4px; }
+.brand-mark::after { content: ""; position: absolute; inset: -6px; border-radius: 16px; border: 1px dashed rgba(116, 69, 232, 0.4); }
+.brand-mark img { width: 100%; height: 100%; object-fit: contain; border-radius: 6px; }
+.brand-name { font-family: var(--font-family-disp); font-weight: 700; font-size: 22px; letter-spacing: -0.02em; line-height: 1.2; }
+.brand-name span { color: var(--text-active); }
+.tag { font-size: 11px; color: var(--text-secondary); font-family: var(--font-family-code); letter-spacing: 0.04em; margin-top: 2px; }
+
+.icon-button { padding: 10px; border-radius: 12px; border: 1px solid var(--border-color); display: flex; align-items: center; justify-content: center; transition: 0.15s; background: var(--bg-secondary); width: 42px; height: 42px;} 
+.icon-button:hover { border-color: var(--text-active); background: rgba(116, 69, 232, 0.08); } 
+.icon-button:hover .material-symbols-outlined { color: var(--text-active); } 
+.content-area { flex-grow: 1; overflow: hidden; position: relative; }
+
+/* --- Sidebar --- */ 
+#left-sidebar { position: fixed; top: 0; left: 0; height: 100%; width: var(--sidebar-width); max-width: 85%; background-color: var(--bg-secondary); border-right: 1px solid var(--border-color); display: flex; flex-direction: column; z-index: 1001; transform: translateX(-100%); transition: transform 0.3s ease-in-out, background-color 0.3s; } 
+body.left-sidebar-open #left-sidebar { transform: translateX(0); } 
+.sidebar-content { padding: 24px 20px; display: flex; flex-direction: column; flex-grow: 1; overflow-y: auto; } 
+.sidebar-header { font-family: var(--font-family-disp); font-size: 1.75rem; font-weight: 700; padding: 12px; margin-bottom: 30px; display: flex; align-items: center; justify-content: space-between; } 
+.sidebar-header span { color: var(--text-active); } 
+.sidebar-nav a, .sidebar-nav button { font-size: 14px; display: flex; align-items: center; gap: 16px; padding: 14px 16px; border-radius: 12px; font-weight: 500; transition: all 0.2s; color: var(--text-secondary); text-align: left; width: 100%; margin-bottom: 10px;} 
+.sidebar-nav a:hover, .sidebar-nav button:hover { background-color: var(--bg-tertiary); color: var(--text-primary); } 
+.sidebar-nav a.active, .sidebar-nav button.active { background: rgba(116, 69, 232, 0.1); border: 1px solid var(--text-active); color: var(--text-active); } 
+.sidebar-nav .material-symbols-outlined { color: inherit; } 
+.sidebar-footer { margin-top: auto; padding-top: 20px; padding-bottom: 20px; border-top: 1px dashed var(--border-color); }
+
+/* --- Screens & Wrappers --- */ 
+.screen { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100%; overflow-y: auto; } 
+.screen.active { display: block; } 
+.content-wrapper { max-width: 900px; width: 100%; margin: 0 auto; padding: 24px 24px 80px; } 
+
+.page-header { margin-bottom: 24px; display: flex; align-items: center; gap: 16px; } 
+.page-header h2 { font-family: var(--font-family-disp); font-size: 18px; font-weight: 600; color: var(--text-primary); }
+
+/* --- Stub Card (The Signature Element) --- */ 
+.stub { background: var(--bg-secondary); color: var(--text-primary); border-radius: 18px; padding: 28px 26px 22px; margin-bottom: 40px; position: relative; overflow: hidden; box-shadow: 0 12px 30px -10px rgba(0,0,0,0.25); border: 1px solid var(--border-color); } 
+.stub::before { content: ""; position: absolute; left: 0; right: 0; bottom: 74px; height: 0; border-top: 2px dashed var(--border-color); } 
+.stub-perf { position: absolute; left: -10px; bottom: 64px; width: 20px; height: 20px; background: var(--bg-primary); border-radius: 50%; border-right: 1px solid var(--border-color); } 
+.stub-perf.right { left: auto; right: -10px; border-right: none; border-left: 1px solid var(--border-color); } 
+.stub-top { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 18px; } 
+.stub-label { font-family: var(--font-family-code); font-size: 11.5px; letter-spacing: 0.12em; color: var(--text-secondary); text-transform: uppercase; } 
+.stub-status { display: flex; align-items: center; gap: 8px; font-family: var(--font-family-code); font-size: 11px; color: var(--green-color); text-transform: uppercase; letter-spacing: 0.08em; } 
+.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--green-color); box-shadow: 0 0 0 4px rgba(31,166,122,0.18); } 
+.stub-email-row { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin-bottom: 32px; } 
+.stub-email { font-family: var(--font-family-code); font-weight: 600; font-size: 20px; word-break: break-all; flex: 1; min-width: 0; color: var(--text-primary); } 
+.stub-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 20px; gap: 12px; flex-wrap: wrap; } 
+.stub-meta { font-family: var(--font-family-code); font-size: 12px; color: var(--text-secondary); } 
+.stub-actions { display: flex; gap: 12px; } 
+
+/* --- Professional Buttons --- */
+.action-btn { background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); border-radius: 10px; padding: 10px 18px; font-size: 13.5px; font-weight: 600; cursor: pointer; transition: all 0.2s; font-family: var(--font-family); display: flex; align-items: center; justify-content: center; gap: 8px;} 
+.action-btn:hover { background: var(--bg-hover); border-color: var(--text-active); } 
+.action-btn.primary { background: var(--brand-gradient); border: none; color: #fff; box-shadow: var(--brand-shadow); } 
+.action-btn.primary:hover:not(:disabled) { opacity: 0.95; transform: translateY(-2px); box-shadow: 0 6px 20px rgba(116, 69, 232, 0.4); } 
+.action-btn.danger { border-color: var(--error-color); color: var(--error-color); }
+.action-btn.danger:hover { background: rgba(232, 54, 85, 0.08); }
+
+/* --- Lists & Inbox --- */ 
+.section-head { display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px; } 
+.section-title { font-family: var(--font-family-disp); font-size: 17px; font-weight: 600; letter-spacing: 0.01em; display: flex; align-items: center; gap: 10px; color: var(--text-primary); } 
+.section-title .material-symbols-outlined { color: var(--text-active); font-size: 22px; }
+
+.inbox-empty { border: 2px dashed var(--border-color); border-radius: 16px; padding: 50px 24px; text-align: center; color: var(--text-secondary); background: rgba(116, 69, 232, 0.02); margin-top: 10px;} 
+.inbox-empty .big { font-family: var(--font-family-code); font-size: 14px; color: var(--text-primary); margin-bottom: 10px; font-weight: 600; } 
+.inbox-empty .small { font-size: 13.5px; line-height: 1.6; } 
+
+.list-container { display: flex; flex-direction: column; gap: 16px; }
+.history-item { background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 14px; padding: 18px 20px; cursor: pointer; transition: .2s; position: relative; display: flex; gap: 18px; align-items: center;} 
+.history-item:hover { border-color: var(--text-active); transform: translateY(-2px); box-shadow: 0 6px 16px rgba(0,0,0,0.06); } 
+.avatar { width: 46px; height: 46px; border-radius: 12px; background: rgba(116, 69, 232, 0.12); display: flex; align-items: center; justify-content: center; font-family: var(--font-family-disp); font-weight: 700; color: var(--text-active); font-size: 18px; flex-shrink: 0; border: 1px solid rgba(116, 69, 232, 0.25); position: relative; } 
+.avatar.new::after { content: ''; position: absolute; top: -4px; right: -4px; width: 14px; height: 14px; background-color: var(--text-active); border-radius: 50%; border: 2px solid var(--bg-secondary); box-shadow: 0 0 6px rgba(116,69,232,0.5); } 
+.item-content { flex-grow: 1; min-width: 0; } 
+.item-top { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 6px; } 
+.sender { font-weight: 600; font-size: 15px; font-family: var(--font-family); color: var(--text-primary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } 
+.time { font-family: var(--font-family-code); font-size: 12px; color: var(--text-secondary); flex-shrink: 0; } 
+.subject { font-size: 14px; color: var(--text-primary); margin-bottom: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; } 
+.snippet { font-size: 13px; color: var(--text-secondary); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; margin-top: 4px; }
+
+/* --- Email Details --- */ 
+.email-meta { background-color: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 18px; padding: 26px; margin-bottom: 24px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); } 
+#email-subject-header { font-family: var(--font-family-disp); font-size: 20px; margin-bottom: 20px; color: var(--text-primary); font-weight: 700; line-height: 1.4;}
+.meta-row { display: flex; align-items: center; gap: 16px; margin-bottom: 12px; } 
+.meta-row .avatar { border-radius: 50%; background: var(--brand-gradient); color: #fff; }
+#email-sender-address { color: var(--text-secondary); font-size: 13px; font-family: var(--font-family-code); margin-top: 4px;}
+.email-body { background-color: var(--bg-primary); border: 1px dashed var(--border-color); border-radius: 14px; padding: 26px; color: var(--text-primary); line-height: 1.7; word-wrap: break-word; overflow-x: auto; font-size: 15px;}
+/* Link Styling */
+.email-body a { color: var(--link-color); text-decoration: underline; font-weight: 500; }
+.email-body a:hover { opacity: 0.8; }
+
+/* --- Misc & Toast --- */ 
+#splash-screen { position: absolute; inset: 0; background-color: var(--bg-primary); z-index: 2000; display: flex; flex-direction: column; align-items: center; justify-content: center; transition: opacity 0.5s; } 
+.splash-loader { width: 180px; height: 6px; background: var(--bg-tertiary); border-radius: 3px; margin-top: 30px; overflow: hidden; } 
+.splash-bar { height: 100%; background: var(--brand-gradient); width: 0%; animation: load 2s ease-out forwards; } 
+@keyframes load { to { width: 100%; } }
+
+.toast { position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%) translateY(20px); background: var(--bg-secondary); border: 1px solid var(--border-color); color: var(--text-primary); padding: 14px 24px; border-radius: 999px; display: flex; align-items: center; gap: 12px; box-shadow: 0 12px 30px -8px rgba(0,0,0,0.5); z-index: 3000; opacity: 0; visibility: hidden; transition: all 0.3s; font-size: 14px; font-weight: 600; font-family: var(--font-family); } 
+.toast.visible { opacity: 1; visibility: visible; transform: translateX(-50%) translateY(0); } 
+.toast-btn { font-size: 13px; color: var(--text-active); font-weight: 600; margin-left: 10px; padding: 6px 10px; border-radius: 8px; background: rgba(116, 69, 232, 0.1); } 
+.toast-btn:hover { background-color: rgba(116, 69, 232, 0.2); }
+
+.spinner { width: 18px; height: 18px; border: 2.5px solid var(--spinner-color); border-top-color: var(--text-primary); border-radius: 50%; animation: spin 0.7s linear infinite; display: inline-block; vertical-align: middle;} 
+.action-btn.primary .spinner { border-top-color: #fff; } 
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.overlay { position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(11, 8, 19, 0.8); backdrop-filter: blur(4px); opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; z-index: 1000; } 
+body.left-sidebar-open .overlay { opacity: 1; visibility: visible; } 
+
+/* --- Desktop Specific Tweaks --- */
+@media (min-width: 1024px) { 
+    #left-sidebar { position: static; transform: none; border-right: 1px solid var(--border-color); background-color: transparent;} 
+    .app-container { gap: 0; }
+    .main-wrapper { padding: 0; } 
+    .main-header { display: none; } 
+    body::before { background-position: 280px 0; }
+    .content-wrapper { padding: 40px; }
+} 
+
+/* --- Mobile Specific Fixes (Adding proper side gaps) --- */
+@media (max-width: 1023px) { 
+    .app-container { flex-direction: column; } 
+    .main-header { padding: 16px 20px; } 
+    .content-wrapper { padding: 16px 20px 80px; } /* Clean mobile padding for all sides */
+    .stub { padding: 24px 20px; border-radius: 16px; margin-bottom: 24px; }
+    .history-item { padding: 16px; gap: 14px; }
+    .email-meta { padding: 20px; border-radius: 16px; }
+    .email-body { padding: 20px; border-radius: 12px; }
+} 
+</style>
+</head>
+<body>
+
+<!-- Splash Screen --> 
+<div id="splash-screen"> 
+    <div class="brand-mark" style="width:80px; height:80px; border-width:3px; border-radius:22px; padding: 8px;">
+        <img src="/favicon.png" alt="HaiMail Logo">
+    </div>
+    <h1 style="font-family:var(--font-family-disp); font-size: 28px; margin-top: 24px; font-weight: 700; color: var(--text-primary);">Hai<span style="color:var(--text-active)">Mail</span></h1> 
+    <div class="splash-loader"><div class="splash-bar"></div></div> 
+</div>
+
+<div class="app-container"> 
+    <!-- Sidebar Navigation --> 
+    <div id="left-sidebar"> 
+        <div class="sidebar-content"> 
+            <div class="sidebar-header"> 
+                <span>HaiMail</span> 
+                <button class="icon-button" id="sidebar-close" style="display: none; border:none;"> 
+                    <span class="material-symbols-outlined">close</span> 
+                </button> 
+            </div> 
+            <nav class="sidebar-nav"> 
+                <button id="nav-home" class="active"> 
+                    <span class="material-symbols-outlined">inbox</span> Inbox 
+                </button> 
+                <button id="nav-trash"> 
+                    <span class="material-symbols-outlined">delete</span> Recycle Bin 
+                </button> 
+                <button id="nav-history"> 
+                    <span class="material-symbols-outlined">history</span> History 
+                </button> 
+                <!-- Theme Toggle --> 
+                <button id="theme-toggle"> 
+                    <span class="material-symbols-outlined" id="theme-icon">dark_mode</span> 
+                    <span id="theme-text">Dark Mode</span> 
+                </button> 
+            </nav> 
+        </div> 
+        <div class="sidebar-footer"> 
+            <div style="padding: 0 16px 16px; color: var(--text-secondary); font-size: 12px; text-align: center; font-family:var(--font-family-code);"> HaldarAi &copy; 2024 </div> 
+        </div> 
+    </div>
+
+    <!-- Overlay for mobile sidebar --> 
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Main Content --> 
+    <div class="main-wrapper"> 
+        <!-- Mobile Header --> 
+        <header class="main-header"> 
+            <div class="brand">
+                <button class="icon-button" id="menu-toggle" style="margin-right:8px; border:none;"> 
+                    <span class="material-symbols-outlined">menu</span> 
+                </button> 
+                <div class="brand-mark">
+                    <img src="/favicon.png" alt="HaiMail Logo">
+                </div> 
+                <div> 
+                    <div class="brand-name">Hai<span>Mail</span></div> 
+                    <div class="tag">disposable inbox · no signup</div> 
+                </div> 
+            </div>
+            <button class="icon-button" id="refresh-btn" title="Refresh"> 
+                <span class="material-symbols-outlined">refresh</span> 
+            </button> 
+        </header>
+
+        <div class="content-area"> 
+            <!-- HOME SCREEN (INBOX) --> 
+            <div id="home-screen" class="screen active"> 
+                <div class="content-wrapper"> 
+                    <div class="stub"> 
+                        <div class="stub-top">
+                            <div class="stub-label">Your address</div>
+                            <div class="stub-status"><span class="dot"></span>active</div>
+                        </div>
+                        <div class="stub-email-row"> 
+                            <div id="temp-email-display" class="stub-email">Generating...</div> 
+                            <button id="copy-btn" class="action-btn"> 
+                                <span class="material-symbols-outlined" style="font-size:18px;">content_copy</span> Copy 
+                            </button> 
+                        </div> 
+                        <div class="stub-perf"></div>
+                        <div class="stub-perf right"></div>
+                        <div class="stub-bottom">
+                            <div class="stub-meta">Auto-checks for emails</div>
+                            <div class="stub-actions">
+                                <button id="desktop-refresh-btn" style="display: none;"></button>
+                                <button id="change-mail-btn" class="action-btn primary"> 
+                                    <span class="material-symbols-outlined" style="font-size:18px;">autorenew</span> Generate
+                                </button> 
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Inbox List --> 
+                    <div class="section-head"> 
+                        <div class="section-title"><span class="material-symbols-outlined">inbox</span> Inbox</div> 
+                    </div>
+
+                    <div id="inbox-list" class="list-container"> 
+                        <div id="empty-inbox" class="inbox-empty"> 
+                            <span class="material-symbols-outlined" style="font-size: 48px; color: var(--text-secondary); margin-bottom: 12px; display: block;">mark_email_unread</span>
+                            <div class="big">— nothing here yet —</div>
+                            <div class="small">Generate an address, then send a test email.<br>New mail appears here automatically.</div>
+                        </div> 
+                    </div>
+                </div> 
+            </div>
+
+            <!-- TRASH SCREEN (Recycle Bin) --> 
+            <div id="trash-screen" class="screen"> 
+                <div class="content-wrapper"> 
+                    <div class="section-head"> 
+                        <div class="section-title"><span class="material-symbols-outlined">delete</span> Recycle Bin</div> 
+                        <button class="action-btn danger" id="empty-trash-btn" style="font-size: 12px; padding: 6px 12px;"> 
+                            <span class="material-symbols-outlined" style="font-size:16px;">delete_forever</span> Empty Bin
+                        </button> 
+                    </div> 
+                    <div id="trash-list" class="list-container"> 
+                        <!-- JS will inject items here --> 
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- HISTORY SCREEN --> 
+            <div id="history-screen" class="screen"> 
+                <div class="content-wrapper"> 
+                    <div class="section-head"> 
+                        <div class="section-title"><span class="material-symbols-outlined">history</span> History</div> 
+                        <button class="action-btn danger" id="clear-history-btn" style="font-size: 12px; padding: 6px 12px;"> 
+                            <span class="material-symbols-outlined" style="font-size:16px;">delete_sweep</span> Clear
+                        </button> 
+                    </div> 
+                    <div id="history-list" class="list-container"> 
+                        <!-- JS will inject items here --> 
+                    </div> 
+                </div> 
+            </div>
+
+            <!-- EMAIL DETAILS SCREEN --> 
+            <div id="email-details-screen" class="screen"> 
+                <div class="content-wrapper"> 
+                    <div class="page-header"> 
+                        <button class="icon-button" id="back-to-inbox-btn"> 
+                            <span class="material-symbols-outlined">arrow_back</span> 
+                        </button> 
+                        <h2>Message Details</h2> 
+                    </div>
+
+                    <div class="email-meta"> 
+                        <h3 id="email-subject-header"></h3> 
+                        <div class="meta-row"> 
+                            <div id="email-avatar" class="avatar"></div> 
+                            <div> 
+                                <div id="email-sender-name" style="font-weight: 600; font-size:15px;"></div> 
+                                <div id="email-sender-address"></div> 
+                            </div> 
+                            <div style="margin-left: auto; text-align: right;"> 
+                                <div id="email-timestamp" style="color: var(--text-secondary); font-size: 12px; font-family: var(--font-family-code);"></div> 
+                            </div> 
+                        </div> 
+                    </div>
+
+                    <div id="email-body" class="email-body"></div>
+
+                    <!-- Action Buttons for Email Details -->
+                    <div style="margin-top: 30px; display: flex; justify-content: flex-end; gap: 12px;"> 
+                        <!-- Shown if in Inbox -->
+                        <button id="delete-message-btn" class="action-btn danger"> 
+                            <span class="material-symbols-outlined" style="font-size:20px;">delete</span> Move to Trash 
+                        </button> 
+                        
+                        <!-- Shown if in Trash -->
+                        <button id="restore-message-btn" class="action-btn primary" style="display: none;"> 
+                            <span class="material-symbols-outlined" style="font-size:20px;">restore</span> Restore 
+                        </button> 
+                        <button id="perm-delete-message-btn" class="action-btn danger" style="display: none;"> 
+                            <span class="material-symbols-outlined" style="font-size:20px;">delete_forever</span> Delete Permanently 
+                        </button> 
+                    </div> 
+                </div> 
+            </div>
+        </div> 
+    </div> 
+</div>
+
+<!-- Toast Notification --> 
+<div id="toast" class="toast"> 
+    <span class="dot"></span>
+    <span id="toast-message">Notification</span> 
+    <button id="toast-action-btn" class="toast-btn" style="display: none;">Action</button>
+    <span class="material-symbols-outlined" id="toast-icon" style="display:none;">info</span>
+</div>
+
+<script type="module"> 
+let state = { 
+    account: null, 
+    messages: [], 
+    deletedIds: [], 
+    currentMessage: null, 
+    inboxInterval: null, 
+    currentScreen: 'home',
+    viewingTrash: false 
+}; 
+let toastTimeout = null;
+const API_BASE_URL = 'https://api.mail.tm'; const SESSION_KEY = 'haiMailSession'; const HISTORY_KEY = 'haiMailHistory'; const THEME_KEY = 'haiMailTheme';
+
+const DOMElements = { 
+    splashScreen: document.getElementById('splash-screen'), 
+    homeScreen: document.getElementById('home-screen'), 
+    detailsScreen: document.getElementById('email-details-screen'), 
+    historyScreen: document.getElementById('history-screen'), 
+    trashScreen: document.getElementById('trash-screen'),
+    sidebar: document.getElementById('left-sidebar'), 
+    menuToggle: document.getElementById('menu-toggle'), 
+    sidebarClose: document.getElementById('sidebar-close'), 
+    overlay: document.getElementById('overlay'), 
+    navHome: document.getElementById('nav-home'), 
+    navHistory: document.getElementById('nav-history'), 
+    navTrash: document.getElementById('nav-trash'),
+    themeToggle: document.getElementById('theme-toggle'), 
+    themeIcon: document.getElementById('theme-icon'), 
+    themeText: document.getElementById('theme-text'), 
+    tempEmailDisplay: document.getElementById('temp-email-display'), 
+    copyBtn: document.getElementById('copy-btn'), 
+    changeMailBtn: document.getElementById('change-mail-btn'), 
+    refreshBtn: document.getElementById('refresh-btn'), 
+    desktopRefreshBtn: document.getElementById('desktop-refresh-btn'), 
+    inboxList: document.getElementById('inbox-list'), 
+    trashList: document.getElementById('trash-list'),
+    emptyInbox: document.getElementById('empty-inbox'), 
+    backToInboxBtn: document.getElementById('back-to-inbox-btn'), 
+    deleteMessageBtn: document.getElementById('delete-message-btn'), 
+    restoreMessageBtn: document.getElementById('restore-message-btn'),
+    permDeleteMessageBtn: document.getElementById('perm-delete-message-btn'),
+    emptyTrashBtn: document.getElementById('empty-trash-btn'),
+    emailSubjectHeader: document.getElementById('email-subject-header'), 
+    emailAvatar: document.getElementById('email-avatar'), 
+    emailSenderName: document.getElementById('email-sender-name'), 
+    emailSenderAddress: document.getElementById('email-sender-address'), 
+    emailTimestamp: document.getElementById('email-timestamp'), 
+    emailBody: document.getElementById('email-body'), 
+    historyList: document.getElementById('history-list'), 
+    clearHistoryBtn: document.getElementById('clear-history-btn'), 
+    toast: document.getElementById('toast'), 
+    toastMessage: document.getElementById('toast-message'), 
+    toastIcon: document.getElementById('toast-icon'), 
+    toastActionBtn: document.getElementById('toast-action-btn'), 
+};
+
+const Storage = { 
+    saveSession: () => { 
+        if (state.account) {
+            localStorage.setItem(SESSION_KEY, JSON.stringify({ 
+                account: state.account, 
+                messages: state.messages,
+                deletedIds: state.deletedIds 
+            })); 
+        }
+    }, 
+    loadSession: () => { 
+        const saved = localStorage.getItem(SESSION_KEY); 
+        if (saved) { 
+            try { 
+                const session = JSON.parse(saved); 
+                if (session && session.account) { 
+                    state.account = session.account; 
+                    state.messages = session.messages || []; 
+                    state.deletedIds = session.deletedIds || [];
+                    return true; 
+                } 
+            } catch (e) { localStorage.removeItem(SESSION_KEY); } 
+        } return false; 
+    }, 
+    clearSession: () => localStorage.removeItem(SESSION_KEY), 
+    getHistory: () => { const history = localStorage.getItem(HISTORY_KEY); return history ? JSON.parse(history) : []; }, 
+    saveToHistory: (account) => { 
+        if (!account || !account.address) return; 
+        let history = Storage.getHistory(); 
+        history = history.filter(acc => acc.address !== account.address); 
+        history.unshift(account); 
+        if (history.length > 20) history.pop(); 
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); 
+    }, 
+    removeFromHistory: (address) => { 
+        let history = Storage.getHistory(); 
+        history = history.filter(acc => acc.address !== address); 
+        localStorage.setItem(HISTORY_KEY, JSON.stringify(history)); 
+    }, 
+    clearHistory: () => { localStorage.removeItem(HISTORY_KEY); } 
+};
+
+async function fetchWithTimeout(resource, options = {}, timeout = 8000) { 
+    const controller = new AbortController(); const id = setTimeout(() => controller.abort(), timeout); 
+    try { 
+        const response = await fetch(resource, { ...options, signal: controller.signal }); 
+        clearTimeout(id); 
+        if (!response.ok) { 
+            if (response.status === 401) { showToast('Session expired. Getting new email...', 'error'); return null; } 
+            throw new Error(`HTTP error! status: ${response.status}`); 
+        } 
+        return response; 
+    } catch (error) { 
+        clearTimeout(id); throw new Error(`Fetch error: ${error.message}`); 
+    } 
+}
+
+async function getNewEmail(button = null) { 
+    if (button) showSpinner(button, true); Storage.saveToHistory(state.account); 
+    try { 
+        const domainResponse = await fetchWithTimeout(`${API_BASE_URL}/domains`); 
+        if (!domainResponse) throw new Error("Could not fetch domains."); 
+        const domains = await domainResponse.json(); const domain = domains['hydra:member'][0].domain; 
+        const address = `${Math.random().toString(36).substring(7)}@${domain}`; const password = Math.random().toString(36).substring(2); 
+        
+        const accountResponse = await fetchWithTimeout(`${API_BASE_URL}/accounts`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ address, password }), }); 
+        if (!accountResponse) throw new Error("Could not create account."); const accountData = await accountResponse.json(); 
+        
+        const tokenResponse = await fetchWithTimeout(`${API_BASE_URL}/token`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ address, password }), }); 
+        if (!tokenResponse) throw new Error("Could not get token."); const { token } = await tokenResponse.json(); 
+        
+        state.account = { id: accountData.id, address, password, token }; 
+        state.messages = []; state.deletedIds = []; 
+        Storage.saveSession(); UI.updateEmailDisplay(); UI.renderInbox(); startInboxPolling(); showToast('New email address ready', 'check_circle'); 
+    } catch (error) { 
+        console.error('Failed to get new email:', error); showToast('Error creating email. Try again.', 'error'); UI.updateEmailDisplay(); 
+    } finally { if (button) showSpinner(button, false); } 
+}
+
+async function checkInbox(manual = false) { 
+    if (!state.account?.token) return; 
+    if(manual) { showSpinner(DOMElements.refreshBtn, true); showSpinner(DOMElements.desktopRefreshBtn, true); } 
+    try { 
+        const response = await fetchWithTimeout(`${API_BASE_URL}/messages`, { headers: { 'Authorization': `Bearer ${state.account.token}` }, }); 
+        if (!response) return; 
+        const data = await response.json(); const newMessages = data['hydra:member']; 
+        newMessages.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt)); 
+        
+        const currentInboxCount = state.messages.filter(m => !state.deletedIds.includes(m.id)).length;
+        const newInboxCount = newMessages.filter(m => !state.deletedIds.includes(m.id)).length;
+        
+        if (newInboxCount > currentInboxCount) { showToast(`${newInboxCount - currentInboxCount} new email(s)!`, 'mark_email_unread'); } 
+        state.messages = newMessages; 
+        Storage.saveSession(); UI.renderInbox(); UI.renderTrash();
+    } catch (error) { 
+        console.error('Failed to check inbox:', error); 
+    } finally { 
+        if(manual) { showSpinner(DOMElements.refreshBtn, false, 'refresh'); showSpinner(DOMElements.desktopRefreshBtn, false, 'refresh'); } 
+    } 
+}
+
+async function openEmail(id, fromTrash = false) { 
+    showToast('Loading email...', 'downloading'); 
+    try { 
+        const response = await fetchWithTimeout(`${API_BASE_URL}/messages/${id}`, { headers: { 'Authorization': `Bearer ${state.account.token}` }, }); 
+        if (!response) return; 
+        const message = await response.json(); 
+        state.currentMessage = message; 
+        state.viewingTrash = fromTrash;
+        UI.renderEmailDetails(message); 
+        UI.navigateTo('details'); 
+    } catch (error) { showToast('Could not load email.', 'error'); } 
+}
+
+const UI = { 
+    toggleTheme: () => { 
+        const current = document.documentElement.getAttribute('data-theme'); const newTheme = current === 'dark' ? 'light' : 'dark'; 
+        document.documentElement.setAttribute('data-theme', newTheme); localStorage.setItem(THEME_KEY, newTheme); UI.updateThemeIcon(newTheme); 
+    }, 
+    updateThemeIcon: (theme) => { 
+        if (theme === 'dark') { DOMElements.themeIcon.textContent = 'light_mode'; DOMElements.themeText.textContent = 'Light Mode'; } 
+        else { DOMElements.themeIcon.textContent = 'dark_mode'; DOMElements.themeText.textContent = 'Dark Mode'; } 
+    }, 
+    renderInbox: () => { 
+        DOMElements.inboxList.innerHTML = ''; 
+        const inboxMessages = state.messages.filter(m => !state.deletedIds.includes(m.id));
+        if (inboxMessages.length === 0) { 
+            DOMElements.inboxList.appendChild(DOMElements.emptyInbox); 
+        } else { 
+            inboxMessages.forEach(msg => { 
+                const emailItem = document.createElement('div'); emailItem.className = "history-item"; emailItem.onclick = () => openEmail(msg.id, false); 
+                const senderName = msg.from.name || msg.from.address; const senderInitial = senderName[0].toUpperCase(); 
+                const isNew = (Date.now() - new Date(msg.createdAt).getTime()) < 600000; 
+                emailItem.innerHTML = ` <div class="avatar ${isNew ? 'new' : ''}">${senderInitial}</div> <div class="item-content"> <div class="item-top"> <span class="sender">${escapeHTML(senderName)}</span> <span class="time">${formatDate(msg.createdAt)}</span> </div> <div class="subject">${escapeHTML(msg.subject || '(No Subject)')}</div> <div class="snippet">${escapeHTML(msg.intro || '')}</div> </div>`; 
+                DOMElements.inboxList.appendChild(emailItem); 
+            }); 
+        } 
+    }, 
+    renderTrash: () => {
+        DOMElements.trashList.innerHTML = ''; 
+        const trashMessages = state.messages.filter(m => state.deletedIds.includes(m.id));
+        if (trashMessages.length === 0) { 
+            DOMElements.trashList.innerHTML = `<div class="inbox-empty"><span class="material-symbols-outlined" style="font-size:48px; color:var(--text-secondary); margin-bottom:12px; display:block;">delete_outline</span><div class="big">Recycle Bin is empty</div><div class="small">Deleted emails will appear here.</div></div>`;
+        } else { 
+            trashMessages.forEach(msg => { 
+                const emailItem = document.createElement('div'); emailItem.className = "history-item"; emailItem.onclick = () => openEmail(msg.id, true); 
+                const senderName = msg.from.name || msg.from.address; const senderInitial = senderName[0].toUpperCase(); 
+                emailItem.innerHTML = ` <div class="avatar">${senderInitial}</div> <div class="item-content"> <div class="item-top"> <span class="sender">${escapeHTML(senderName)}</span> <span class="time">${formatDate(msg.createdAt)}</span> </div> <div class="subject">${escapeHTML(msg.subject || '(No Subject)')}</div> <div class="snippet">${escapeHTML(msg.intro || '')}</div> </div>`; 
+                DOMElements.trashList.appendChild(emailItem); 
+            }); 
+        }
+    },
+    renderEmailDetails: (message) => { 
+        DOMElements.emailSubjectHeader.textContent = message.subject || '(No Subject)'; 
+        DOMElements.emailSenderName.textContent = message.from.name || message.from.address; 
+        DOMElements.emailSenderAddress.textContent = `<${message.from.address}>`; 
+        DOMElements.emailTimestamp.textContent = new Date(message.createdAt).toLocaleString(); 
+        DOMElements.emailAvatar.textContent = (message.from.name || message.from.address)[0].toUpperCase(); 
+        if (message.html && message.html.length > 0) { DOMElements.emailBody.innerHTML = message.html[0]; } 
+        else { DOMElements.emailBody.innerHTML = `<p>${escapeHTML(message.text || '')}</p>`; } 
+        
+        if (state.viewingTrash) {
+            DOMElements.deleteMessageBtn.style.display = 'none';
+            DOMElements.restoreMessageBtn.style.display = 'flex';
+            DOMElements.permDeleteMessageBtn.style.display = 'flex';
+        } else {
+            DOMElements.deleteMessageBtn.style.display = 'flex';
+            DOMElements.restoreMessageBtn.style.display = 'none';
+            DOMElements.permDeleteMessageBtn.style.display = 'none';
+        }
+    }, 
+    renderHistory: () => { 
+        const history = Storage.getHistory(); DOMElements.historyList.innerHTML = ''; 
+        if (history.length === 0) { 
+            DOMElements.historyList.innerHTML = `<div style="text-align:center; color:var(--text-secondary); padding:20px; font-family:var(--font-family-code); font-size:13px;">No history available.</div>`; 
+        } else { 
+            history.forEach(account => { 
+                const historyItem = document.createElement('div'); historyItem.className = "history-item"; 
+                historyItem.innerHTML = ` <div class="avatar"><span class="material-symbols-outlined" style="color:var(--text-active); font-size: 22px;">history</span></div> <div class="item-content"> <div class="sender" style="font-family:var(--font-family-code); font-size:14px;">${account.address}</div> </div> `; 
+                historyItem.onclick = () => switchToAccount(account); DOMElements.historyList.appendChild(historyItem); 
+            }); 
+        } 
+    }, 
+    updateEmailDisplay: () => { DOMElements.tempEmailDisplay.textContent = state.account ? state.account.address : 'No active email'; }, 
+    toggleSidebar: (forceClose = false) => { 
+        if (forceClose) { document.body.classList.remove('left-sidebar-open'); } else { document.body.classList.toggle('left-sidebar-open'); } 
+        if(document.body.classList.contains('left-sidebar-open')) { DOMElements.sidebarClose.style.display = 'flex'; } else { DOMElements.sidebarClose.style.display = 'none'; } 
+    }, 
+    navigateTo: (screen) => { 
+        document.querySelectorAll('.screen').forEach(el => el.classList.remove('active')); 
+        DOMElements.navHome.classList.remove('active'); DOMElements.navHistory.classList.remove('active'); DOMElements.navTrash.classList.remove('active');
+        if (screen === 'home') { DOMElements.homeScreen.classList.add('active'); DOMElements.navHome.classList.add('active'); } 
+        else if (screen === 'details') { DOMElements.detailsScreen.classList.add('active'); } 
+        else if (screen === 'history') { DOMElements.historyScreen.classList.add('active'); DOMElements.navHistory.classList.add('active'); } 
+        else if (screen === 'trash') { DOMElements.trashScreen.classList.add('active'); DOMElements.navTrash.classList.add('active'); }
+        state.currentScreen = screen; UI.toggleSidebar(true); 
+    } 
+};
+
+function copyToClipboard() { if (!state.account?.address) return; navigator.clipboard.writeText(state.account.address).then(() => showToast('Email copied to clipboard', 'content_paste')); } 
+function hideToast() { DOMElements.toast.classList.remove('visible'); }
+
+function showToast(message, iconName = 'info', action = null) { 
+    clearTimeout(toastTimeout); const { toast, toastMessage, toastIcon, toastActionBtn } = DOMElements; 
+    toastMessage.textContent = message; toastIcon.textContent = iconName; 
+    if (action && action.text && action.callback) { 
+        toastActionBtn.textContent = action.text; toastActionBtn.style.display = 'block'; 
+        const newActionBtn = toastActionBtn.cloneNode(true); toastActionBtn.parentNode.replaceChild(newActionBtn, toastActionBtn); 
+        DOMElements.toastActionBtn = newActionBtn; newActionBtn.addEventListener('click', () => { action.callback(); hideToast(); }); 
+    } else { toastActionBtn.style.display = 'none'; } 
+    toast.classList.add('visible'); toastTimeout = setTimeout(hideToast, 4000); 
+}
+
+function showSpinner(button, show, originalIcon = '') { 
+    if (!button) return; 
+    if (show) { 
+        button.disabled = true; if(!button.dataset.originalHTML) button.dataset.originalHTML = button.innerHTML; 
+        button.innerHTML = '<span class="spinner"></span>'; 
+    } else { 
+        button.disabled = false; 
+        if(button.dataset.originalHTML) { button.innerHTML = button.dataset.originalHTML; } 
+        else if (originalIcon) { button.innerHTML = `<span class="material-symbols-outlined">${originalIcon}</span>`; } 
+    } 
+}
+
+function escapeHTML(str) { const p = document.createElement('p'); p.textContent = str; return p.innerHTML; }
+function formatDate(dateString) { 
+    const date = new Date(dateString); const now = new Date(); const seconds = Math.round((now - date) / 1000); 
+    if (seconds < 60) return "Just now"; const minutes = Math.round(seconds / 60); 
+    if (minutes < 60) return `${minutes}m ago`; const hours = Math.round(minutes / 60); 
+    if (hours < 24) return `${hours}h ago`; return `${Math.round(hours / 24)}d ago`; 
+} 
+
+function switchToAccount(account) { 
+    Storage.saveToHistory(state.account); Storage.removeFromHistory(account.address); 
+    state.account = account; state.messages = []; state.deletedIds = []; Storage.saveSession(); 
+    UI.updateEmailDisplay(); UI.renderInbox(); UI.renderTrash(); startInboxPolling(); UI.navigateTo('home'); showToast(`Switched to ${account.address}`, 'swap_horiz'); 
+}
+
+function startInboxPolling() { clearInterval(state.inboxInterval); checkInbox(); state.inboxInterval = setInterval(() => checkInbox(false), 10000); }
+
+function addEventListeners() { 
+    DOMElements.navHome.addEventListener('click', () => UI.navigateTo('home')); 
+    DOMElements.navHistory.addEventListener('click', () => { UI.renderHistory(); UI.navigateTo('history'); }); 
+    DOMElements.navTrash.addEventListener('click', () => { UI.renderTrash(); UI.navigateTo('trash'); }); 
+    
+    DOMElements.backToInboxBtn.addEventListener('click', () => {
+        if(state.viewingTrash) { UI.renderTrash(); UI.navigateTo('trash'); }
+        else { UI.renderInbox(); UI.navigateTo('home'); }
+    }); 
+    
+    DOMElements.menuToggle.addEventListener('click', () => UI.toggleSidebar()); 
+    DOMElements.sidebarClose.addEventListener('click', () => UI.toggleSidebar(true)); 
+    DOMElements.overlay.addEventListener('click', () => UI.toggleSidebar(true)); 
+    DOMElements.themeToggle.addEventListener('click', UI.toggleTheme); 
+    DOMElements.copyBtn.addEventListener('click', copyToClipboard); 
+    DOMElements.changeMailBtn.addEventListener('click', (e) => getNewEmail(e.currentTarget)); 
+    DOMElements.refreshBtn.addEventListener('click', () => checkInbox(true)); 
+    if(DOMElements.desktopRefreshBtn) DOMElements.desktopRefreshBtn.addEventListener('click', () => checkInbox(true)); 
+    
+    DOMElements.clearHistoryBtn.addEventListener('click', () => { 
+        if(confirm("Clear all history?")) { Storage.clearHistory(); UI.renderHistory(); } 
+    }); 
+    
+    DOMElements.deleteMessageBtn.addEventListener('click', () => { 
+        if (state.currentMessage) { 
+            if(confirm("Move this message to Recycle Bin?")) {
+                state.deletedIds.push(state.currentMessage.id);
+                Storage.saveSession(); UI.renderInbox(); UI.navigateTo('home'); 
+                showToast('Moved to Recycle Bin', 'delete'); 
+            }
+        } 
+    }); 
+    
+    DOMElements.restoreMessageBtn.addEventListener('click', () => { 
+        if (state.currentMessage) { 
+            if(confirm("Restore this message to Inbox?")) {
+                state.deletedIds = state.deletedIds.filter(id => id !== state.currentMessage.id);
+                Storage.saveSession(); UI.renderTrash(); UI.renderInbox(); UI.navigateTo('trash'); 
+                showToast('Message restored', 'restore'); 
+            }
+        } 
+    }); 
+
+    DOMElements.permDeleteMessageBtn.addEventListener('click', async () => { 
+        if (state.currentMessage) { 
+            if(confirm("Permanently delete this message? This cannot be undone.")) {
+                showToast('Deleting...', 'hourglass_empty');
+                try {
+                    await fetchWithTimeout(`${API_BASE_URL}/messages/${state.currentMessage.id}`, {
+                        method: 'DELETE', headers: { 'Authorization': `Bearer ${state.account.token}` }
+                    });
+                } catch(e) { console.error("API Delete failed:", e); }
+                
+                state.messages = state.messages.filter(m => m.id !== state.currentMessage.id);
+                state.deletedIds = state.deletedIds.filter(id => id !== state.currentMessage.id);
+                Storage.saveSession(); UI.renderTrash(); UI.navigateTo('trash'); 
+                showToast('Deleted permanently', 'delete_forever'); 
+            }
+        } 
+    });
+    
+    DOMElements.emptyTrashBtn.addEventListener('click', async () => {
+        if(state.deletedIds.length === 0) { showToast('Recycle Bin is already empty'); return; }
+        if(confirm("Empty Recycle Bin? All messages will be permanently deleted.")) {
+            showToast('Emptying Bin...', 'hourglass_empty');
+            state.deletedIds.forEach(id => {
+                fetch(`${API_BASE_URL}/messages/${id}`, { method: 'DELETE', headers: { 'Authorization': `Bearer ${state.account.token}` } }).catch(e=>e);
+            });
+            state.messages = state.messages.filter(m => !state.deletedIds.includes(m.id));
+            state.deletedIds = [];
+            Storage.saveSession(); UI.renderTrash();
+            showToast('Recycle Bin emptied', 'delete_sweep');
+        }
+    });
+} 
+
+async function initApp() { 
+    const savedTheme = localStorage.getItem(THEME_KEY) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'); 
+    document.documentElement.setAttribute('data-theme', savedTheme); UI.updateThemeIcon(savedTheme); 
+    addEventListeners(); 
+    if(window.innerWidth >= 1024) { if(DOMElements.desktopRefreshBtn) DOMElements.desktopRefreshBtn.style.display = "flex"; } 
+    if (Storage.loadSession()) { showToast("Session restored", "restore"); } else { await getNewEmail(); } 
+    if (state.account) { UI.updateEmailDisplay(); UI.renderInbox(); startInboxPolling(); } 
+    setTimeout(() => { DOMElements.splashScreen.style.opacity = '0'; setTimeout(() => DOMElements.splashScreen.style.display = 'none', 500); }, 2000); 
+} document.addEventListener('DOMContentLoaded', initApp); 
+</script>
+</body>
+</html>
